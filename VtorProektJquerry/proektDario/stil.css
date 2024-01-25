@@ -1,0 +1,141 @@
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+#header {
+    width: 100%;
+	padding: 20px;
+    background-color: #BDBFDE;
+   }
+   
+#footer {
+    background-color: #BDBFDE; 
+    padding: 20px; 
+}
+
+.logo {
+    width: 100px; 
+    mix-blend-mode: multiply;   
+}
+.name{
+    margin-left: 400px;
+    font-size: 30px; 
+    font-weight: bold; 
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+#navbar a:hover{
+    color: grey;
+}
+
+#home {
+    padding: 40px;
+    text-align: center;
+}
+.home2 {
+    font-weight: 550;
+    font-size: 18px;
+}
+.category {
+	width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 5px solid grey;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.subcategory {
+	width: 250px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.category h3 {
+    color: #333;
+	font-weight: bold;
+}
+
+.category p {
+    color: #555;
+}
+
+
+
+.footer-div {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+
+.monitor {
+    width: 100px; 
+    mix-blend-mode: multiply;
+}
+
+.smartphone{
+    width: 100px; 
+    mix-blend-mode: multiply;
+}
+
+.category label {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#impressionsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head2 {
+    text-align: center;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+#contactInfo {
+    margin-left: 200px; 
+}
+
+.comments{
+	width: 50px;
+	height: 150px;
+	padding: 1px;
+}
+

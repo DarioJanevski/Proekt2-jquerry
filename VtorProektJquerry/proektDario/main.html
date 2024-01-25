@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Tech Haven online shop</title>
+
+    <link rel="stylesheet" href="stil.css">
+    <title>Tech Haven online shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        footer {
+            background-color: #BDBFDE;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <section id="header">
+			<img src="TechHaven-smalllogo-final.png" height=150px> 
+		</section>
+    </header>
+
+			<!-- icon library za menito gore -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- sidebar - horizontalen -->
+		<div class="sidebar" align="center">
+		  <a href="main.html"><i class="fa fa-fw fa-home"></i> Home  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  <a href="proizvodi.html"><i class="fa fa-shopping-cart"></i> Products  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  <a href="survey.html"><i class="fa fa-fw fa-user"></i> Survey  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div> 
+
+	<div class="category">
+	<p>
+	<b> Smartphones</b> <br><br>
+
+Embark on a journey through the vast landscape of smartphones, where sleek designs and powerful features converge. Our collection boasts an impressive array of the latest models from renowned brands, each promising a seamless blend of style and functionality. Whether you're an Android aficionado or an iOS enthusiast, our shop caters to all preferences.
+Explore the stunning displays, vibrant colors, and immersive experiences offered by the latest smartphone models. From flagship devices with top-tier cameras to budget-friendly options that don't compromise on performance, we have a smartphone for every need and budget. Stay connected in style and experience the future of communication in the palm of your hand.
+Monitors That Transform Your Viewing Experience.
+	</p>
+	</div>
+	
+	<div class="category">
+	<p>
+	<b>Monitors</b> <br><br>
+Elevate your visual experience with our state-of-the-art monitors that redefine clarity and precision. Dive into a world of immersive entertainment and productivity with displays designed to captivate your senses. Whether you're a gamer seeking seamless graphics, a content creator craving color accuracy, or a professional in need of multitasking capabilities, our monitor selection has you covered.
+	</p>
+	</div>
+	
+	<div class="category">
+	<p>
+	<b>Drones</b> <br><br>
+Unleash the sky explorer in you with our range of high-performance drones. From aerial photography to recreational flying, our drone collection caters to enthusiasts of all levels. Experience the thrill of capturing breathtaking landscapes or navigating the skies with precision, our drones are designed to make every flight an adventure.
+	</p>
+	</div>
+	
+    <!-- Login Page -->
+    <section id="login">
+        <h2><strong>Login page</strong></h2>
+		<h3><strong>(hint: username = dario, password = dario)</strong></h3>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <br><br><br>
+    <footer>
+        <p>&copy; 2023 Tech Haven online shop <br></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginForm = document.getElementById('loginForm');
+            loginForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                if (username === 'dario' && password === 'dario') {
+                    alert('Login successful!');
+                    window.location.replace('proizvodi.html');
+                } else {
+                    alert('Invalid username or password. Please try again.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

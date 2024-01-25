@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <meta charset="UTF-8">	
+    <title>Tech Haven online shop</title>
+   <link rel="stylesheet" href="stil.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <section id="header">
+		<img src="TechHaven-smalllogo-final.png" height=150px> 
+    </section>
+		
+		<!-- icon library za menito gore -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- sidebar - horizontalen -->
+		<div class="sidebar">
+		  <a href="proizvodi.html"><i class="fa fa-shopping-cart"></i> Product  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  <a href="survey.html"><i class="fa fa-fw fa-user"></i> Survey  </a>&nbsp&nbsp
+		  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		  <a href="main.html"><i class="fa fa-fw fa-home"></i> Home  </a>&nbsp&nbsp
+		</div> 
+
+    <h1 align="center">Customer Survey</h1>
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Survey</title>
+    
+    <script>
+        function showThankYouPopup() {
+            alert("Thank you for your survey!");
+        }
+    </script>
+</head>
+
+<body>
+
+<form action="proizvodi.html" method="post" onsubmit="showThankYouPopup();">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Shopping Habits</legend>
+        
+        <p>How often do you shop online?</p>
+        <input type="radio" id="often" name="shoppingFrequency" value="often">
+        <label for="often">Often</label>
+
+        <input type="radio" id="occasionally" name="shoppingFrequency" value="occasionally">
+        <label for="occasionally">Occasionally</label>
+
+        <input type="radio" id="rarely" name="shoppingFrequency" value="rarely">
+        <label for="rarely">Rarely</label>
+
+        <br>
+
+        <p>What type of products do you prefer to shop for?</p>
+        <input type="checkbox" id="Monitors" name="productPreference[]" value="Monitors">
+        <label for="Monitors">Monitors</label>
+
+        <input type="checkbox" id="Smartphones" name="productPreference[]" value="Smartphones">
+        <label for="Smartphones">Smartphones</label>
+
+        <input type="checkbox" id="Drones" name="productPreference[]" value="Drones">
+        <label for="Drones">Drones</label>
+
+        <br>
+
+        <p>Rate your overall satisfaction (1 - Worst, 5 - Best):</p>
+        <input type="range" id="satisfaction" name="satisfaction" min="1" max="5" required>
+        <span id="satisfactionValue">3</span>
+
+        <script>
+            document.getElementById("satisfaction").addEventListener("input", function() {
+                document.getElementById("satisfactionValue").innerText = this.value;
+            });
+        </script>
+
+        <br>
+
+        <label for="comments">Any additional comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+	<br><br>
+</form>
+
+    <section id="footer">
+        <div class="footer-div">
+            <p>&copy; 2023 Tech Haven online shop <br></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
